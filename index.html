@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Criptomonedas</title>
+    <h1 id="head"> 
+        Balance de Criptomonedas
+    </h1>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="chart">
+            <canvas id="doughnut" width="300" height="300"> </canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="chart1.js"></script>
+    
+    
+    
+    <div class="info">
+        <h2 id="subtitle">Resumen</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Moneda</th>
+                    <th>Cantidad</th>
+                    <th>Precio de compra</th>
+                    <th>Precio actual</th>
+                    <th>Capital</th>
+                    <th>Líquidez</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Binance</td>
+                <td id="cantidadBinance"></td>
+                <td>$<span id="precioBinance"></span></td>
+                <td> <span id="binance"></span></td>
+                <td>$<span id="bnbCapital"></span></td>
+                <td>$<span id="liquidez-binance"></span></td>
+                <td><span id="balance-binance"></span></td>
+            </tr>
+            <tr>
+                <td>Bitcoin</td>
+                <td id="cantidadBitcoin"></td>
+                <td>$<span id="precioBitcoin"></span></td>
+                <td><span id="bitcoin"></span></td>
+                <td>$<span id="btcCapital"></span></td>
+                <td>$<span id="liquidez-bitcoin"></span></td>
+                <td><span id="balance-bitcoin"></span></td>
+                
+            </tr>
+            <tr>
+                <td>Dogecoin</td>
+                <td id="cantidadDogecoin"></td>
+                <td>$<span id="precioDogecoin"></span></td>
+                <td><span id="dogecoin"></span></td>
+                <td>$<span id="dogeCapital"></span></td>
+                <td>$<span id="liquidez-dogecoin"></span></td>
+                <td><span id="balance-dogecoin"></span></td>
+            </tr>
+            
+            <tr>
+                <td>Ethereum</td>
+                <td id="cantidadEthereum"></td>
+                <td>$<span id="precioEthereum"></span></td>
+                <td><span id="ethereum"></span></td>
+                <td>$<span id="ethCapital"></span></td>
+                <td>$<span id="liquidez-ethereum"></span></td>
+                <td><span id="balance-ethereum"></span></td>
+            </tr>
+            <tr>
+                <td>Sandbox</td>
+                <td id="cantidadSandbox"></td>
+                <td>$<span id="precioSandbox"></span></td>
+                <td><span id="sandbox"></span></td>
+                <td>$<span id="sandCapital"></span></td>
+                <td>$<span id="liquidez-sandbox"></span></td>
+                <td><span id="balance-sandbox"></span></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>$<span id="inversion"></span></td>
+                <td><span id="total"></span></td>
+                <td><spand id="balance-total"></spand></td>
+
+        </table>
+        
+    </div>
+
+    <script src="app_v1.js"></script>
+</body>
+</html>
